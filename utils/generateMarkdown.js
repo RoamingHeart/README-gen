@@ -13,6 +13,7 @@ function renderLicenseLink(license) {
   if (license !== 'N/A') {
     return `${renderLicenseBadge(license)}(https://opensource.org/licenses/${license})`
   }
+  return ``
 }
 
 // TODO: Create a function that returns the license section of README
@@ -25,6 +26,7 @@ function renderLicenseSection(license) {
 This Project is using licenses the ${license} license`
     )
   }
+  return ``
 }
 
 // TODO: Create a function to generate markdown for README
